@@ -1,0 +1,8 @@
+<p>card-board works!</p>
+
+
+    <card *ngFor="let card of cards; let index = i" [curentCard]="card" (isChange)="isFleip($event,i)">
+    </card>
+    preCard : {{ globalService.preCard | json }}
+<br>
+    postCard: <br> {{ globalService.postCard | json }}

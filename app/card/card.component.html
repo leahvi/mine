@@ -1,0 +1,19 @@
+<div  class="card border-primary"    *ngIf="curentCard.flieppedStsatus==false" (click)="fliepped()">
+    <div class="card-header"></div>
+    <div class="card-body text-primary">
+      <h5 class="card-title"></h5>
+      <p class="card-text"></p>
+    </div>
+</div>
+<div  class="card border-primary" *ngIf="curentCard.flieppedStsatus==true">
+<span class="card border-primary">
+   
+    <div class="card-header"></div>
+    <div class="card-body text-primary">
+      <h5 class="card-title"></h5>
+      <p class="card-text"> {{curentCard.id}} {{curentCard.nameCard}}</p>
+    </div>
+</span>
+</div>
+{{ curentCard | json  }}
+
